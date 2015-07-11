@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FAFBDCB91B38281400862792 /* Fat */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FAFBDCBA1B38281400862792 /* Build configuration list for PBXAggregateTarget "Fat" */;
+			buildPhases = (
+				FAFBDCBF1B38284500862792 /* MultiPlatform */,
+			);
+			dependencies = (
+				FAFBDD581B382AA100862792 /* PBXTargetDependency */,
+			);
+			name = Fat;
+			productName = Fat;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1B4CF1511B4D69DD00C74DF6 /* AChat.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1B4CF1501B4D69DD00C74DF6 /* AChat.pch */; };
+		FAD4C7C91B386EA60016FF99 /* ACBaseModel+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD4C7C71B386EA60016FF99 /* ACBaseModel+Protected.h */; };
+		FAD4C7CB1B3870A70016FF99 /* ACBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD231B3829C100862792 /* ACBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD4C7CC1B3870AA0016FF99 /* ACMessageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD251B3829C100862792 /* ACMessageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD4C7CD1B3870AC0016FF99 /* ACRoomModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD271B3829C100862792 /* ACRoomModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD4C7CE1B3870B00016FF99 /* ACUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD2B1B3829C100862792 /* ACUserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD4C7CF1B3870B40016FF99 /* AChat.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDE3E1B382FA300862792 /* AChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD4C7D01B3870B80016FF99 /* ACEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD171B3829C100862792 /* ACEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD4C7D11B3870BC0016FF99 /* ACUserInfoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD291B3829C100862792 /* ACUserInfoModel.h */; };
+		FAFBDCCF1B38292C00862792 /* libAChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFBDCC41B38292C00862792 /* libAChat.a */; };
+		FAFBDD391B3829C100862792 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD151B3829C100862792 /* SRWebSocket.h */; };
+		FAFBDD3A1B3829C100862792 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD161B3829C100862792 /* SRWebSocket.m */; };
+		FAFBDD3C1B3829C100862792 /* ACEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD181B3829C100862792 /* ACEngine.m */; };
+		FAFBDD3D1B3829C100862792 /* ACConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD1A1B3829C100862792 /* ACConnection.h */; };
+		FAFBDD3E1B3829C100862792 /* ACConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD1B1B3829C100862792 /* ACConnection.m */; };
+		FAFBDD3F1B3829C100862792 /* ACConnection_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD1C1B3829C100862792 /* ACConnection_Protected.h */; };
+		FAFBDD401B3829C100862792 /* ACSocketConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD1D1B3829C100862792 /* ACSocketConnection.h */; };
+		FAFBDD411B3829C100862792 /* ACSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD1E1B3829C100862792 /* ACSocketConnection.m */; };
+		FAFBDD421B3829C100862792 /* NSObject+MethodsDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD201B3829C100862792 /* NSObject+MethodsDependency.h */; };
+		FAFBDD431B3829C100862792 /* NSObject+MethodsDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD211B3829C100862792 /* NSObject+MethodsDependency.m */; };
+		FAFBDD451B3829C100862792 /* ACBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD241B3829C100862792 /* ACBaseModel.m */; };
+		FAFBDD471B3829C100862792 /* ACMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD261B3829C100862792 /* ACMessageModel.m */; };
+		FAFBDD491B3829C100862792 /* ACRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD281B3829C100862792 /* ACRoomModel.m */; };
+		FAFBDD4B1B3829C100862792 /* ACUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD2A1B3829C100862792 /* ACUserInfoModel.m */; };
+		FAFBDD4D1B3829C100862792 /* ACUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD2C1B3829C100862792 /* ACUserModel.m */; };
+		FAFBDD4E1B3829C100862792 /* ACAPIProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD2E1B3829C100862792 /* ACAPIProvider.h */; };
+		FAFBDD4F1B3829C100862792 /* ACAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD2F1B3829C100862792 /* ACAPIProvider.m */; };
+		FAFBDD501B3829C100862792 /* ACAPIOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD311B3829C100862792 /* ACAPIOperation.h */; };
+		FAFBDD511B3829C100862792 /* ACAPIOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD321B3829C100862792 /* ACAPIOperation.m */; };
+		FAFBDD521B3829C100862792 /* ACAPIOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD341B3829C100862792 /* ACAPIOperationManager.h */; };
+		FAFBDD531B3829C100862792 /* ACAPIOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD351B3829C100862792 /* ACAPIOperationManager.m */; };
+		FAFBDD541B3829C100862792 /* ACMultipartBodyConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBDD371B3829C100862792 /* ACMultipartBodyConstructor.h */; };
+		FAFBDD551B3829C100862792 /* ACMultipartBodyConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBDD381B3829C100862792 /* ACMultipartBodyConstructor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAFBDCD01B38292C00862792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFBDC471B38238000862792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFBDCC31B38292C00862792;
+			remoteInfo = AChat;
+		};
+		FAFBDD571B382AA100862792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFBDC471B38238000862792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFBDCC31B38292C00862792;
+			remoteInfo = AChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAFBDCC21B38292C00862792 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B4CF1501B4D69DD00C74DF6 /* AChat.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AChat.pch; sourceTree = SOURCE_ROOT; };
+		FAD4C7C71B386EA60016FF99 /* ACBaseModel+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ACBaseModel+Protected.h"; sourceTree = "<group>"; };
+		FAFBDC541B38238000862792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFBDC611B38238000862792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFBDC621B38238000862792 /* AChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AChatTests.m; sourceTree = "<group>"; };
+		FAFBDCB01B38254A00862792 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FAFBDCC41B38292C00862792 /* libAChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAChat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFBDCCE1B38292C00862792 /* AChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFBDCD41B38292C00862792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFBDD151B3829C100862792 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		FAFBDD161B3829C100862792 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		FAFBDD171B3829C100862792 /* ACEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEngine.h; sourceTree = "<group>"; };
+		FAFBDD181B3829C100862792 /* ACEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEngine.m; sourceTree = "<group>"; };
+		FAFBDD1A1B3829C100862792 /* ACConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACConnection.h; sourceTree = "<group>"; };
+		FAFBDD1B1B3829C100862792 /* ACConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACConnection.m; sourceTree = "<group>"; };
+		FAFBDD1C1B3829C100862792 /* ACConnection_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACConnection_Protected.h; sourceTree = "<group>"; };
+		FAFBDD1D1B3829C100862792 /* ACSocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSocketConnection.h; sourceTree = "<group>"; };
+		FAFBDD1E1B3829C100862792 /* ACSocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACSocketConnection.m; sourceTree = "<group>"; };
+		FAFBDD201B3829C100862792 /* NSObject+MethodsDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodsDependency.h"; sourceTree = "<group>"; };
+		FAFBDD211B3829C100862792 /* NSObject+MethodsDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodsDependency.m"; sourceTree = "<group>"; };
+		FAFBDD231B3829C100862792 /* ACBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACBaseModel.h; sourceTree = "<group>"; };
+		FAFBDD241B3829C100862792 /* ACBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACBaseModel.m; sourceTree = "<group>"; };
+		FAFBDD251B3829C100862792 /* ACMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMessageModel.h; sourceTree = "<group>"; };
+		FAFBDD261B3829C100862792 /* ACMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMessageModel.m; sourceTree = "<group>"; };
+		FAFBDD271B3829C100862792 /* ACRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRoomModel.h; sourceTree = "<group>"; };
+		FAFBDD281B3829C100862792 /* ACRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACRoomModel.m; sourceTree = "<group>"; };
+		FAFBDD291B3829C100862792 /* ACUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserInfoModel.h; sourceTree = "<group>"; };
+		FAFBDD2A1B3829C100862792 /* ACUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACUserInfoModel.m; sourceTree = "<group>"; };
+		FAFBDD2B1B3829C100862792 /* ACUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserModel.h; sourceTree = "<group>"; };
+		FAFBDD2C1B3829C100862792 /* ACUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACUserModel.m; sourceTree = "<group>"; };
+		FAFBDD2E1B3829C100862792 /* ACAPIProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAPIProvider.h; sourceTree = "<group>"; };
+		FAFBDD2F1B3829C100862792 /* ACAPIProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAPIProvider.m; sourceTree = "<group>"; };
+		FAFBDD311B3829C100862792 /* ACAPIOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAPIOperation.h; sourceTree = "<group>"; };
+		FAFBDD321B3829C100862792 /* ACAPIOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAPIOperation.m; sourceTree = "<group>"; };
+		FAFBDD341B3829C100862792 /* ACAPIOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAPIOperationManager.h; sourceTree = "<group>"; };
+		FAFBDD351B3829C100862792 /* ACAPIOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAPIOperationManager.m; sourceTree = "<group>"; };
+		FAFBDD371B3829C100862792 /* ACMultipartBodyConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMultipartBodyConstructor.h; sourceTree = "<group>"; };
+		FAFBDD381B3829C100862792 /* ACMultipartBodyConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMultipartBodyConstructor.m; sourceTree = "<group>"; };
+		FAFBDE3E1B382FA300862792 /* AChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AChat.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFBDCC11B38292C00862792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFBDCCB1B38292C00862792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFBDCCF1B38292C00862792 /* libAChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFBDC461B38238000862792 = {
+			isa = PBXGroup;
+			children = (
+				FAFBDCB01B38254A00862792 /* libicucore.dylib */,
+				FAFBDD121B3829C100862792 /* allychat-ios */,
+				FAFBDC521B38238000862792 /* AChat */,
+				FAFBDC5F1B38238000862792 /* AChatTests */,
+				FAFBDCC51B38292C00862792 /* AChat */,
+				FAFBDCD21B38292C00862792 /* AChatTests */,
+				FAFBDC511B38238000862792 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFBDC511B38238000862792 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDCC41B38292C00862792 /* libAChat.a */,
+				FAFBDCCE1B38292C00862792 /* AChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFBDC521B38238000862792 /* AChat */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDC531B38238000862792 /* Supporting Files */,
+				FAFBDE3E1B382FA300862792 /* AChat.h */,
+			);
+			path = AChat;
+			sourceTree = "<group>";
+		};
+		FAFBDC531B38238000862792 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B4CF1501B4D69DD00C74DF6 /* AChat.pch */,
+				FAFBDC541B38238000862792 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAFBDC5F1B38238000862792 /* AChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDC621B38238000862792 /* AChatTests.m */,
+				FAFBDC601B38238000862792 /* Supporting Files */,
+			);
+			path = AChatTests;
+			sourceTree = "<group>";
+		};
+		FAFBDC601B38238000862792 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDC611B38238000862792 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAFBDCC51B38292C00862792 /* AChat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AChat;
+			sourceTree = "<group>";
+		};
+		FAFBDCD21B38292C00862792 /* AChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDCD31B38292C00862792 /* Supporting Files */,
+			);
+			path = AChatTests;
+			sourceTree = "<group>";
+		};
+		FAFBDCD31B38292C00862792 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDCD41B38292C00862792 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAFBDD121B3829C100862792 /* allychat-ios */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD131B3829C100862792 /* 3rd */,
+				FAFBDD171B3829C100862792 /* ACEngine.h */,
+				FAFBDD181B3829C100862792 /* ACEngine.m */,
+				FAFBDD191B3829C100862792 /* Connection */,
+				FAFBDD1F1B3829C100862792 /* MethodDependency */,
+				FAFBDD221B3829C100862792 /* Models */,
+				FAFBDD2D1B3829C100862792 /* REST */,
+			);
+			path = "allychat-ios";
+			sourceTree = "<group>";
+		};
+		FAFBDD131B3829C100862792 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD141B3829C100862792 /* SocketRocket */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		FAFBDD141B3829C100862792 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD151B3829C100862792 /* SRWebSocket.h */,
+				FAFBDD161B3829C100862792 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		FAFBDD191B3829C100862792 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD1A1B3829C100862792 /* ACConnection.h */,
+				FAFBDD1B1B3829C100862792 /* ACConnection.m */,
+				FAFBDD1C1B3829C100862792 /* ACConnection_Protected.h */,
+				FAFBDD1D1B3829C100862792 /* ACSocketConnection.h */,
+				FAFBDD1E1B3829C100862792 /* ACSocketConnection.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		FAFBDD1F1B3829C100862792 /* MethodDependency */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD201B3829C100862792 /* NSObject+MethodsDependency.h */,
+				FAFBDD211B3829C100862792 /* NSObject+MethodsDependency.m */,
+			);
+			path = MethodDependency;
+			sourceTree = "<group>";
+		};
+		FAFBDD221B3829C100862792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD231B3829C100862792 /* ACBaseModel.h */,
+				FAFBDD241B3829C100862792 /* ACBaseModel.m */,
+				FAD4C7C71B386EA60016FF99 /* ACBaseModel+Protected.h */,
+				FAFBDD251B3829C100862792 /* ACMessageModel.h */,
+				FAFBDD261B3829C100862792 /* ACMessageModel.m */,
+				FAFBDD271B3829C100862792 /* ACRoomModel.h */,
+				FAFBDD281B3829C100862792 /* ACRoomModel.m */,
+				FAFBDD291B3829C100862792 /* ACUserInfoModel.h */,
+				FAFBDD2A1B3829C100862792 /* ACUserInfoModel.m */,
+				FAFBDD2B1B3829C100862792 /* ACUserModel.h */,
+				FAFBDD2C1B3829C100862792 /* ACUserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAFBDD2D1B3829C100862792 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD2E1B3829C100862792 /* ACAPIProvider.h */,
+				FAFBDD2F1B3829C100862792 /* ACAPIProvider.m */,
+				FAFBDD301B3829C100862792 /* Operation */,
+				FAFBDD331B3829C100862792 /* OperationManager */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		FAFBDD301B3829C100862792 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD311B3829C100862792 /* ACAPIOperation.h */,
+				FAFBDD321B3829C100862792 /* ACAPIOperation.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		FAFBDD331B3829C100862792 /* OperationManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD341B3829C100862792 /* ACAPIOperationManager.h */,
+				FAFBDD351B3829C100862792 /* ACAPIOperationManager.m */,
+				FAFBDD361B3829C100862792 /* Multipart */,
+			);
+			path = OperationManager;
+			sourceTree = "<group>";
+		};
+		FAFBDD361B3829C100862792 /* Multipart */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBDD371B3829C100862792 /* ACMultipartBodyConstructor.h */,
+				FAFBDD381B3829C100862792 /* ACMultipartBodyConstructor.m */,
+			);
+			path = Multipart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAFBDCDB1B38296700862792 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD4C7D01B3870B80016FF99 /* ACEngine.h in Headers */,
+				FAD4C7CF1B3870B40016FF99 /* AChat.h in Headers */,
+				FAD4C7CB1B3870A70016FF99 /* ACBaseModel.h in Headers */,
+				FAD4C7CC1B3870AA0016FF99 /* ACMessageModel.h in Headers */,
+				FAD4C7CD1B3870AC0016FF99 /* ACRoomModel.h in Headers */,
+				FAD4C7CE1B3870B00016FF99 /* ACUserModel.h in Headers */,
+				FAD4C7C91B386EA60016FF99 /* ACBaseModel+Protected.h in Headers */,
+				FAFBDD541B3829C100862792 /* ACMultipartBodyConstructor.h in Headers */,
+				1B4CF1511B4D69DD00C74DF6 /* AChat.pch in Headers */,
+				FAD4C7D11B3870BC0016FF99 /* ACUserInfoModel.h in Headers */,
+				FAFBDD401B3829C100862792 /* ACSocketConnection.h in Headers */,
+				FAFBDD421B3829C100862792 /* NSObject+MethodsDependency.h in Headers */,
+				FAFBDD4E1B3829C100862792 /* ACAPIProvider.h in Headers */,
+				FAFBDD521B3829C100862792 /* ACAPIOperationManager.h in Headers */,
+				FAFBDD391B3829C100862792 /* SRWebSocket.h in Headers */,
+				FAFBDD3D1B3829C100862792 /* ACConnection.h in Headers */,
+				FAFBDD501B3829C100862792 /* ACAPIOperation.h in Headers */,
+				FAFBDD3F1B3829C100862792 /* ACConnection_Protected.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAFBDCC31B38292C00862792 /* AChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFBDCD51B38292C00862792 /* Build configuration list for PBXNativeTarget "AChat" */;
+			buildPhases = (
+				FAFBDCC01B38292C00862792 /* Sources */,
+				FAFBDCC11B38292C00862792 /* Frameworks */,
+				FAFBDCC21B38292C00862792 /* CopyFiles */,
+				FAFBDCDB1B38296700862792 /* Headers */,
+				FAFBDD561B382A7100862792 /* Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AChat;
+			productName = AChat;
+			productReference = FAFBDCC41B38292C00862792 /* libAChat.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FAFBDCCD1B38292C00862792 /* AChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFBDCD81B38292C00862792 /* Build configuration list for PBXNativeTarget "AChatTests" */;
+			buildPhases = (
+				FAFBDCCA1B38292C00862792 /* Sources */,
+				FAFBDCCB1B38292C00862792 /* Frameworks */,
+				FAFBDCCC1B38292C00862792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFBDCD11B38292C00862792 /* PBXTargetDependency */,
+			);
+			name = AChatTests;
+			productName = AChatTests;
+			productReference = FAFBDCCE1B38292C00862792 /* AChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFBDC471B38238000862792 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = octoberry;
+				TargetAttributes = {
+					FAFBDCB91B38281400862792 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FAFBDCC31B38292C00862792 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FAFBDCCD1B38292C00862792 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = FAFBDC4A1B38238000862792 /* Build configuration list for PBXProject "AChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAFBDC461B38238000862792;
+			productRefGroup = FAFBDC511B38238000862792 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFBDCB91B38281400862792 /* Fat */,
+				FAFBDCC31B38292C00862792 /* AChat */,
+				FAFBDCCD1B38292C00862792 /* AChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFBDCCC1B38292C00862792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAFBDCBF1B38284500862792 /* MultiPlatform */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = MultiPlatform;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\nexport SRC_ROOT=${SRCROOT}\nexport LIB_ROOT=$SRC_ROOT/../../../\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${LIB_ROOT}/${RW_FRAMEWORK_NAME}.framework\"\nopen ${LIB_ROOT}";
+		};
+		FAFBDD561B382A7100862792 /* Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Framework;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFBDCC01B38292C00862792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFBDD4B1B3829C100862792 /* ACUserInfoModel.m in Sources */,
+				FAFBDD411B3829C100862792 /* ACSocketConnection.m in Sources */,
+				FAFBDD3C1B3829C100862792 /* ACEngine.m in Sources */,
+				FAFBDD4F1B3829C100862792 /* ACAPIProvider.m in Sources */,
+				FAFBDD531B3829C100862792 /* ACAPIOperationManager.m in Sources */,
+				FAFBDD3E1B3829C100862792 /* ACConnection.m in Sources */,
+				FAFBDD511B3829C100862792 /* ACAPIOperation.m in Sources */,
+				FAFBDD491B3829C100862792 /* ACRoomModel.m in Sources */,
+				FAFBDD4D1B3829C100862792 /* ACUserModel.m in Sources */,
+				FAFBDD451B3829C100862792 /* ACBaseModel.m in Sources */,
+				FAFBDD431B3829C100862792 /* NSObject+MethodsDependency.m in Sources */,
+				FAFBDD551B3829C100862792 /* ACMultipartBodyConstructor.m in Sources */,
+				FAFBDD471B3829C100862792 /* ACMessageModel.m in Sources */,
+				FAFBDD3A1B3829C100862792 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFBDCCA1B38292C00862792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAFBDCD11B38292C00862792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFBDCC31B38292C00862792 /* AChat */;
+			targetProxy = FAFBDCD01B38292C00862792 /* PBXContainerItemProxy */;
+		};
+		FAFBDD581B382AA100862792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFBDCC31B38292C00862792 /* AChat */;
+			targetProxy = FAFBDD571B382AA100862792 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAFBDC641B38238000862792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AChat.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAFBDC651B38238000862792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AChat.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAFBDCBB1B38281400862792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAFBDCBC1B38281400862792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAFBDCD61B38292C00862792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		FAFBDCD71B38292C00862792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		FAFBDCD91B38292C00862792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAFBDCDA1B38292C00862792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFBDC4A1B38238000862792 /* Build configuration list for PBXProject "AChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFBDC641B38238000862792 /* Debug */,
+				FAFBDC651B38238000862792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFBDCBA1B38281400862792 /* Build configuration list for PBXAggregateTarget "Fat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFBDCBB1B38281400862792 /* Debug */,
+				FAFBDCBC1B38281400862792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFBDCD51B38292C00862792 /* Build configuration list for PBXNativeTarget "AChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFBDCD61B38292C00862792 /* Debug */,
+				FAFBDCD71B38292C00862792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFBDCD81B38292C00862792 /* Build configuration list for PBXNativeTarget "AChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFBDCD91B38292C00862792 /* Debug */,
+				FAFBDCDA1B38292C00862792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFBDC471B38238000862792 /* Project object */;
+}

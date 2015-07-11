@@ -1,0 +1,1 @@
+PODS_SMART_SUPPORT_IOS_JSQMESSAGESVIEWCONTROLLER_OTHER_LDFLAGS = -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "MapKit" -framework "QuartzCore" -framework "UIKit"
