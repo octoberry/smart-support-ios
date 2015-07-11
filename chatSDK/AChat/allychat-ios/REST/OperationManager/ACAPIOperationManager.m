@@ -116,9 +116,7 @@ static id ACJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
         {
             NSError *serializationError;
             NSDictionary *plainResponse = [[NSDictionary alloc] initWithObjectsAndKeys:@(httpResponse.statusCode),@"status", nil];
-            JSONData =  (NSDictionary *)[NSJSONSerialization dataWithJSONObject:plainResponse
-                                                                        options:NSJSONWritingPrettyPrinted
-                                                                          error:&serializationError];
+            JSONData =  [NSJSONSerialization dataWithJSONObject:plainResponse options:NSJSONWritingPrettyPrinted error:&serializationError];
         }
         completion(JSONData, error);
     } :nil];

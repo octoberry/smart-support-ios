@@ -35,10 +35,12 @@
 
 #pragma mark AChat Delegate Methods
 
-- (void)chat:(ACEngine *)engine didReceiveMessage:(ACMessageModel *)message {
+- (void)chat:(ACEngine *)engine didReceiveMessage:(ACMessageModel *)message
+{
+    [self addMessages:@[ message ]];
+    [self finishSendingMessageAnimated:YES];
+    [self scrollToBottomAnimated:YES];
     
-        [self addMessages:@[ message ]];
-        [self finishReceivingMessageAnimated:YES];
     //When message received - mark it read
     [[SharedData sharedData].engine readMessage:message.messageID completion:^(NSError *error, bool isComplete) {
         if (!isComplete) {
@@ -107,6 +109,15 @@
     }
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //self.collectionView.collectionViewLayout.springinessEnabled = YES;
+    
+        self.topContentAdditionalInset = 10.0f;
+    
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [[SharedData sharedData].engine roomsWithCompletion:^(NSArray *rooms, NSError *error) {
@@ -117,6 +128,7 @@
         self.room = rooms[index];
         
         self.senderId = [SharedData sharedData].engine.userModel.userID;
+        self.senderDisplayName = [SharedData sharedData].engine.userModel.name;
         
         [self getRoomData];
         
@@ -140,34 +152,27 @@
     [SharedData sharedData].engine.integrationDelegate = self;
     [SharedData sharedData].engine.delegate = self;
     
-    self.senderDisplayName = @"";
     self.messages = [NSMutableArray array];
     
     self.avatars = [NSMutableDictionary dictionary];
     
     self.showLoadEarlierMessagesHeader = YES;
-    
-    
-    
-    
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-//        NSData *data = [NSData dataWithContentsOfURL:[SharedData sharedData].engine.userModel.avatarURL];
-//        UIImage *image = [UIImage imageWithData:data];
-//        if (!image) return;
-//        
-//        JSQMessagesAvatarImage *wozImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:image
-//                                                                                      diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-//        [self.avatars setValue:wozImage forKey:self.senderId];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.collectionView reloadData];
-//        });
-//    });
-    
 
     
-
     
-
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        NSData *data = [NSData dataWithContentsOfURL:[SharedData sharedData].engine.userModel.avatarURL];
+        UIImage *image = [UIImage imageWithData:data];
+        if (!image) return;
+        
+        JSQMessagesAvatarImage *wozImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:image
+                                                                                      diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        [self.avatars setValue:wozImage forKey:self.senderId];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+        });
+    });
+    
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -181,16 +186,13 @@
          senderDisplayName:(NSString *)senderDisplayName
                       date:(NSDate *)date
 {
+    button.userInteractionEnabled = NO;
     [JSQSystemSoundPlayer jsq_playMessageSentSound];
-    [[SharedData sharedData].engine sendTextMessage:text room:self.room.roomID completion:nil];
-    
-    
-    
-    //    [[SharedData sharedData].engine sendTextMessage:text  room:@"558b4653b82d04e3c335f9f7" completion:^(NSError *error) {
-    //        NSLog(@"%@", error.description);
-    //    }];
-    
-    [self finishSendingMessageAnimated:YES];
+    [[SharedData sharedData].engine sendTextMessage:text room:self.room.roomID completion:^(NSError *error) {
+            button.userInteractionEnabled = YES;
+    }];
+
+    [self scrollToBottomAnimated:YES];
 }
 
 - (void)didPressAccessoryButton:(UIButton *)sender
@@ -223,8 +225,10 @@
         [alert show];
         return;
     }
+
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
+
     imagePicker.sourceType = sourceType;
     imagePicker.allowsEditing = NO;
     if (imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera) {
@@ -367,6 +371,16 @@
             //            [self finishReceivingMessageAnimated:NO];
         }
     }];
+}
+
+- (void)collectionView:(JSQMessagesCollectionView *)collectionView didTapMessageBubbleAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Tapped message bubble!");
+}
+
+- (void)collectionView:(JSQMessagesCollectionView *)collectionView didTapCellAtIndexPath:(NSIndexPath *)indexPath touchLocation:(CGPoint)touchLocation
+{
+    NSLog(@"Tapped cell at %@!", NSStringFromCGPoint(touchLocation));
 }
 
 #pragma mark - ImagePicker

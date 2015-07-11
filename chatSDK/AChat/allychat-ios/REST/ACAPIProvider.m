@@ -102,7 +102,12 @@ static NSString  *_appId = nil;
         [postData appendPartWithFile:fileData name:@"file" fileName:name mimeType:type];
     } completion:^(id response, NSError *error) {
         if (completion) {
-            completion(error, response[@"file"]);
+            if (response[@"file"]) {
+                completion(error, response[@"file"]);
+            }
+            else
+                completion(error, nil);
+            
         }
     }] setUploadProgressBlock:progress? ^(NSUInteger bytesRead, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
         progress(totalBytesWritten/totalBytesExpectedToWrite);

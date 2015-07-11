@@ -10,7 +10,7 @@
 #import "JSQMessagesViewController.h"
 #import <AChat/AChat.h>
 
-@interface ViewController : JSQMessagesViewController <UIActionSheetDelegate, AChatDelegate,AChatIntegrationDelegate, UIImagePickerControllerDelegate>
+@interface ViewController : JSQMessagesViewController <UIActionSheetDelegate, AChatDelegate,AChatIntegrationDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 
 @end
